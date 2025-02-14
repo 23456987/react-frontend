@@ -15,7 +15,7 @@ const navigate = useNavigate();
             return;
           }
     
-          const res = await axios.get("http://localhost:5000/profile", {
+          const res = await axios.get("https://liveapi-z54l.onrender.com/profile", {
            headers: { Authorization: `Bearer ${token}` }, // Send token in headers
           });
           setUser(res.data); // Set user data
